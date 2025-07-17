@@ -6,6 +6,7 @@
 
 .background .control {
   display: flex;
+  justify-content: space-between;
   padding-top: 25px;
   gap: 25px;
 }
