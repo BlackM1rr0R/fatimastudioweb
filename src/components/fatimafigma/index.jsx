@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./index.module.css";
 import FatimaPhoto from "../../assets/images/image 12.png";
-import FigmaPhoto from "../../assets/images/figmaaaaa.png";
+import FigmaPhoto from "../../assets/images/image11.png";
 const FatimaFigma = () => {
   return (
     <div className={styles.background}>
