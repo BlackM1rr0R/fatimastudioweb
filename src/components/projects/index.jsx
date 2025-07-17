@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ProjectOne1 from "../../assets/images/saytaz.jpg";
 import ProjectOne2 from "../../assets/images/azerholiday.jpg";
-import ProjectOne3 from "../../assets/images/skalioz.png";
+import ProjectOne3 from "../../assets/images/brown.png";
 import ProjectOne4 from "../../assets/images/onlineshop.png";
 import ProjectOne5 from "../../assets/images/perfume.png";
 import ProjectOne6 from "../../assets/images/binary.png";
@@ -19,6 +19,16 @@ import ProjectOne10 from "../../assets/images/ty.png";
 import ProjectOne11 from "../../assets/images/company.png";
 import ProjectOne12 from "../../assets/images/luxe.png";
 import ProjectOne13 from "../../assets/images/haya.png";
+import ProjectOne14 from "../../assets/images/azers.png";
+import ProjectOne15 from "../../assets/images/fweb.png";
+import ProjectOne16 from "../../assets/images/image 731.png";
+import ProjectOne17 from "../../assets/images/Minimalist Booking Freelance Design Tablet Mockup Instagram Post (1) 1.png";
+import ProjectOne18 from "../../assets/images/Neutral Phone Mockup Aesthetic New Post Instagram Story 1.png";
+import ProjectOne19 from "../../assets/images/Frame 24 (1) 1.png";
+import ProjectOne20 from "../../assets/images/White and Beige Minimalist Aesthetic New in my Blog Instagram Post 1.png";
+import ProjectOne21 from "../../assets/images/Group 3 1 1.png";
+import ProjectOne22 from "../../assets/images/image 747 1.png";
+import ProjectOne23 from "../../assets/images/Brown Green Terracotta Minimal Social Media Mockup Instagram Post 1.png";
 import { Link } from "react-router-dom";
 const Projects = () => {
   const data = useMemo(() => [
@@ -44,10 +54,80 @@ const Projects = () => {
       country: "Web Designer",
     },
     {
+      id: 14,
+      image: `${ProjectOne14}`,
+      title: "AZER ABDULLAYEV PHOTOGRAPHY",
+
+      country: "Logo Design",
+    },
+    {
+      id: 15,
+      image: `${ProjectOne15}`,
+      title: "FATIMA BASHIRLI WEBSITE",
+
+      country: "UX/UI Designer",
+    },
+    {
+      id: 16,
+      image: `${ProjectOne16}`,
+      title: "CODA AGENCY",
+
+      country: "Designer",
+    },
+    {
+      id: 17,
+      image: `${ProjectOne17}`,
+      title: "INSURANCE COMPANY TRUST WAVE",
+
+      country: "UX/UI Designer",
+    },
+    {
+      id: 18,
+      image: `${ProjectOne18}`,
+      title: "COLORSTORM.AZ",
+
+      country: "Graphic Designer",
+    },
+    {
+      id: 19,
+      image: `${ProjectOne19}`,
+      title: "TRUSTLY.AZ",
+
+      country: "Art Director & Designer",
+    },
+    {
+      id: 20,
+      image: `${ProjectOne20}`,
+      title: "TAB.EDU.AZ",
+
+      country: "Graphic Designer",
+    },
+    {
+      id: 21,
+      image: `${ProjectOne21}`,
+      title: "ASADZADE.SANAN",
+
+      country: "Logo Designer",
+    },
+    {
+      id: 22,
+      image: `${ProjectOne22}`,
+      title: "CODE INNOVATOR DEVELOPMENT",
+
+      country: "Designer",
+    },
+    {
+      id: 23,
+      image: `${ProjectOne23}`,
+      title: "ASADZADE.SANAN",
+
+      country: "Graphic Designer",
+    },
+    {
       id: 10,
       image: `${ProjectOne10}`,
       title: "THANK YOU BUSINESS CARD",
-    
+
       country: "Graphic Designer",
     },
     {
@@ -113,7 +193,7 @@ const Projects = () => {
       link: "https://www.behance.net/fatimabashirli",
       country: "Web Designer",
     },
-    
+
   ]);
   return (
     <div className={styles.background}>

@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import ImzaPhoto from "../../../assets/images/SVG.png";
-import FatimaPp from "../../../assets/images/668f4236fa60301a6de3209c_JamieWindell-1.webp.png";
+import FatimaPp from "../../../assets/images/image11.png";
 import VectorText from "../../../assets/images/Vector.png";
 import BehancePhoto from "../../../assets/images/image 11.png";
 import LinkedinPhotoo from "../../../assets/images/Img.png";
 import AzerbaijanFlag from '../../../assets/images/azerbaijan.png'
-import InstagramPhoto from '../../../assets/images/instagram.png'
+import InstagramPhoto from '../../../assets/images/Link - LinkedIn Logo Link.png'
 import { Link } from "react-router-dom";
 const Header = () => {
   const [time, setTime] = useState(new Date());
@@ -23,7 +23,7 @@ const Header = () => {
           <p>
             Hi, I’m Fatima Bashirli, Your go-to Branding Consultant for
             elevating your brand perception. Let's design the experience you
-            want to see tomorrow.  
+            want to see tomorrow.
           </p>
           <img src={ImzaPhoto} alt="" />
         </div>
@@ -50,14 +50,15 @@ const Header = () => {
         <div className={styles.menuSide}>
           <h2>MENU +</h2>
           <Link target="_blank" to="https://www.instagram.com/fatimabrandlfe/profilecard/">
-          <img src={InstagramPhoto} alt="" />
-          </Link>
-          <Link target="_blank" to="https://www.behance.net/fatimabashirli">
-          <img src={BehancePhoto} alt="" />
+            <img src={InstagramPhoto} alt="" />
           </Link>
           <Link target="_blank" to="https://www.linkedin.com/in/fatima-bashirli-104348286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
-          <img src={LinkedinPhotoo} alt="" />
+            <img src={LinkedinPhotoo} alt="" />
           </Link>
+          <Link target="_blank" to="https://www.behance.net/fatimabashirli">
+            <img src={BehancePhoto} alt="" />
+          </Link>
+
         </div>
       </div>
     </div>
