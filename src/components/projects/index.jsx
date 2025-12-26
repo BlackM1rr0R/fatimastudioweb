@@ -30,180 +30,351 @@ import Post21 from "../../assets/images/post21.png";
 import Post22 from "../../assets/images/post22.png";
 import Post23 from "../../assets/images/post23.png";
 import Post24 from "../../assets/images/post24.png";
-
+import ProjectOne1 from "../../assets/images/saytaz.jpg";
+import ProjectOne2 from "../../assets/images/azerholiday.jpg";
+import ProjectOne3 from "../../assets/images/brown.png";
+import ProjectOne4 from "../../assets/images/onlineshop.png";
+import ProjectOne5 from "../../assets/images/perfume.png";
+import ProjectOne6 from "../../assets/images/binary.png";
+import ProjectOne7 from "../../assets/images/interview.png";
+import ProjectOne8 from "../../assets/images/shoppy.png";
+import ProjectOne9 from "../../assets/images/rashadmirza.png";
+import ProjectOne10 from "../../assets/images/ty.png";
+import ProjectOne11 from "../../assets/images/company.png";
+import ProjectOne12 from "../../assets/images/luxe.png";
+import ProjectOne13 from "../../assets/images/haya.png";
+import ProjectOne14 from "../../assets/images/azers.png";
+import ProjectOne15 from "../../assets/images/fweb.png";
+import ProjectOne16 from "../../assets/images/image 731.png";
+import ProjectOne17 from "../../assets/images/Minimalist Booking Freelance Design Tablet Mockup Instagram Post (1) 1.png";
+import ProjectOne18 from "../../assets/images/Neutral Phone Mockup Aesthetic New Post Instagram Story 1.png";
+import ProjectOne19 from "../../assets/images/Frame 24 (1) 1.png";
+import ProjectOne20 from "../../assets/images/White and Beige Minimalist Aesthetic New in my Blog Instagram Post 1.png";
+import ProjectOne21 from "../../assets/images/Group 3 1 1.png";
+import ProjectOne22 from "../../assets/images/image 747 1.png";
+import ProjectOne23 from "../../assets/images/Brown Green Terracotta Minimal Social Media Mockup Instagram Post 1.png";
 
 
 import { Link } from "react-router-dom";
 const Projects = () => {
   const data = useMemo(() => [
     {
-      id: 1,
-      image: `${Post1}`,
-      title: "FORMCOND LLC",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 2,
-      image: `${Post2}`,
-      title: "ALISON.LOGISTICS",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 3,
-      image: `${Post3}`,
-      title: "MOON GROUP",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 4,
-      image: `${Post4}`,
-      title: "GANJLIK GARDEN RESIDENCE",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 5,
-      image: `${Post5}`,
-      title: "NEW YEAR POSTS",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 6,
-      image: `${Post6}`,
-      title: "FERRUM KAPITAL BANK",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 7,
-      image: `${Post7}`,
-      title: "ALISON TRAVEL",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 8,
-      image: `${Post8}`,
-      title: "WOWLAASH CERTIFICATE",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 9,
-      image: `${Post9}`,
-      title: "CASTROL AZERBAIJAN OFFICIAL",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 10,
-      image: `${Post10}`,
-      title: "CAMELA GIFT DESIGN",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 11,
-      image: `${Post11}`,
-      title: "FERRUM KAPITAL BANK",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 12,
-      image: `${Post12}`,
-      title: "ATLACADEMY",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 13,
-      image: `${Post13}`,
-      title: "HAYAA COLLECTION",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "ArtDirector",
-    },
-    {
-      id: 14,
-      image: `${Post14}`,
-      title: "LOGO DESIGN",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 15,
-      image: `${Post15}`,
-      title: "THE 9TH WAY AGENCY",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 16,
-      image: `${Post16}`,
-      title: "ATLACADEMY",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 17,
-      image: `${Post17}`,
-      title: "BLOG",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "SMM & Designer",
-    },
-    {
-      id: 18,
-      image: `${Post18}`,
-      title: "LINE AGENCY",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 19,
-      image: `${Post19}`,
-      title: "ALISON LOGISTICS",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 20,
-      image: `${Post20}`,
-      title: "TRUSTLY ACADEMY",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Web Designer",
-    },
-    {
-      id: 21,
-      image: `${Post21}`,
-      title: "DEUTSCHE AKADEMIE BAKU",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
-    {
-      id: 22,
-      image: `${Post22}`,
-      title: "DECEMBER CONTENT",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Art Director & Designer",
-    },
-    {
-      id: 23,
-      image: `${Post23}`,
-      title: "HAYAA COLLECTION",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Art Director",
-    },
-    {
-      id: 24,
-      image: `${Post24}`,
-      title: "CAFE & PATISSERIE",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Graphic Designer",
-    },
+    id: 1,
+    image: ProjectOne1,
+    title: "Ureb.com, Site.az, Sayt.az",
+    link: "https://sayt.az/",
+    country: "Web Designer & Graphic Designer",
+  },
+  {
+    id: 2,
+    image: ProjectOne2,
+    title: "Azeholidays.com",
+    link: "https://azeholidays.com/",
+    country: "Web Designer",
+  },
+  {
+    id: 3,
+    image: ProjectOne3,
+    title: "Fizioterapevt Yusif Zeynalov",
+    link: "https://www.figma.com/design/DafjmZrAmgKu164rzryY8Q",
+    country: "Web Designer",
+  },
+  {
+    id: 4,
+    image: ProjectOne4,
+    title: "WhatShop Mobile App",
+    link: "https://www.figma.com/design/DafjmZrAmgKu164rzryY8Q",
+    country: "Mobile Designer",
+  },
+  {
+    id: 5,
+    image: ProjectOne5,
+    title: "LAPARFUMEGALLERY.COM",
+    link: "https://perfumenewwebsite.vercel.app/",
+    country: "Web Designer",
+  },
+  {
+    id: 6,
+    image: ProjectOne6,
+    title: "BINARYSCHOOL.AZ",
+    link: "https://www.instagram.com/binaryschool.az",
+    country: "Web Designer",
+  },
+  {
+    id: 7,
+    image: ProjectOne7,
+    title: "INTERVIEWER.AZ",
+    link: "https://www.figma.com/file/X49EfCJLGIOZzmnwWMyXFM",
+    country: "Web & Graphic Designer",
+  },
+  {
+    id: 8,
+    image: ProjectOne8,
+    title: "SHOPPY.AZ",
+    link: "https://www.figma.com/file/oSO7tXZPhMUVg0GmrTHW3b",
+    country: "Web & Graphic Designer",
+  },
+
+  {
+    id: 10,
+    image: ProjectOne10,
+    title: "THANK YOU BUSINESS CARD",
+    country: "Graphic Designer",
+  },
+  {
+    id: 11,
+    image: ProjectOne11,
+    title: "COMPANY WEBSITE",
+    country: "Web Designer",
+  },
+  {
+    id: 12,
+    image: ProjectOne12,
+    title: "LUXE INSTAGRAM TEMPLATE",
+    country: "Graphic Designer & SMM",
+  },
+  {
+    id: 13,
+    image: ProjectOne13,
+    title: "HAYA COLLECTION BRAND BUSINESS CARD",
+    country: "Graphic Designer",
+  },
+  {
+    id: 14,
+    image: ProjectOne14,
+    title: "AZER ABDULLAYEV PHOTOGRAPHY",
+    country: "Logo Design",
+  },
+  {
+    id: 15,
+    image: ProjectOne15,
+    title: "FATIMA BASHIR WEBSITE",
+    country: "UX/UI Designer",
+  },
+  {
+    id: 16,
+    image: ProjectOne16,
+    title: "CODA AGENCY",
+    country: "Designer",
+  },
+  {
+    id: 17,
+    image: ProjectOne17,
+    title: "INSURANCE COMPANY TRUST WAVE",
+    country: "UX/UI Designer",
+  },
+  {
+    id: 18,
+    image: ProjectOne18,
+    title: "COLORSTORM.AZ",
+    country: "Designer",
+  },
+  {
+    id: 19,
+    image: ProjectOne19,
+    title: "TRUSTLY.AZ",
+    country: "Art Director & Designer",
+  },
+  {
+    id: 20,
+    image: ProjectOne20,
+    title: "TAB.EDU.AZ",
+    country: "Designer",
+  },
+  {
+    id: 21,
+    image: ProjectOne21,
+    title: "ASADZADE.SANAN",
+    country: "Logo Designer",
+  },
+  {
+    id: 22,
+    image: ProjectOne22,
+    title: "CODE INNOVATOR DEVELOPMENT",
+    country: "Designer",
+  },
+  {
+    id: 23,
+    image: ProjectOne23,
+    title: "ASADZADE.SANAN",
+    country: "Designer",
+  },
+  {
+    id: 9,
+    image: ProjectOne9,
+    title: "RASHADMIRZA.COM",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Web Designer",
+  },
+  // ===================== POSTS =====================
+  {
+    id: 101,
+    image: Post1,
+    title: "FORMCOND LLC",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 102,
+    image: Post2,
+    title: "ALISON LOGISTICS",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 103,
+    image: Post3,
+    title: "MOON GROUP",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 104,
+    image: Post4,
+    title: "GANJLIK GARDEN RESIDENCE",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 105,
+    image: Post5,
+    title: "NEW YEAR POSTS",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 106,
+    image: Post6,
+    title: "FERRUM KAPITAL BANK",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 107,
+    image: Post7,
+    title: "ALISON TRAVEL",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 108,
+    image: Post8,
+    title: "WOWLAASH CERTIFICATE",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 109,
+    image: Post9,
+    title: "CASTROL AZERBAIJAN OFFICIAL",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 110,
+    image: Post10,
+    title: "CAMELA GIFT DESIGN",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 111,
+    image: Post11,
+    title: "FERRUM KAPITAL BANK",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 112,
+    image: Post12,
+    title: "ATLACADEMY",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 113,
+    image: Post13,
+    title: "HAYAA COLLECTION",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Art Director",
+  },
+  {
+    id: 114,
+    image: Post14,
+    title: "LOGO DESIGN",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 115,
+    image: Post15,
+    title: "THE 9TH WAY AGENCY",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 116,
+    image: Post16,
+    title: "ATLACADEMY",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 117,
+    image: Post17,
+    title: "BLOG",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "SMM & Designer",
+  },
+  {
+    id: 118,
+    image: Post18,
+    title: "LINE AGENCY",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 119,
+    image: Post19,
+    title: "ALISON LOGISTICS",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 120,
+    image: Post20,
+    title: "TRUSTLY ACADEMY",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Web Designer",
+  },
+  {
+    id: 121,
+    image: Post21,
+    title: "DEUTSCHE AKADEMIE BAKU",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  },
+  {
+    id: 122,
+    image: Post22,
+    title: "DECEMBER CONTENT",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Art Director & Designer",
+  },
+  {
+    id: 123,
+    image: Post23,
+    title: "HAYAA COLLECTION",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Art Director",
+  },
+  {
+    id: 124,
+    image: Post24,
+    title: "CAFE & PATISSERIE",
+    link: "https://www.behance.net/fatimabashirli",
+    country: "Graphic Designer",
+  }
   
 
 
