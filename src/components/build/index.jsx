@@ -12,7 +12,7 @@ const Build = () => {
         </div>
         <div className={styles.rightSide}>
           <h2>
-            For the last 2 years, I’ve played a lot of roles. From multiple
+            For the last 3 years, I’ve played a lot of roles. From multiple
             career paths in Azerbaijan design studio owner in I’ve lived a full
             life. And in that time, I’ve learned one main lesson: when your
             business is efficient, you can do more impactful work. 

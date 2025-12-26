@@ -21,7 +21,7 @@ const Header = () => {
         <div className={styles.designSuccess}>
           <h1>Design Success, One Project at a Time</h1>
           <p>
-            Hi, I’m Fatima Bashirli, Your go-to Branding Consultant for
+            Hi, I’m Fatima Bashir, Your go-to Branding Consultant for
             elevating your brand perception. Let's design the experience you
             want to see tomorrow.
           </p>

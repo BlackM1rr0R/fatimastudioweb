@@ -5,7 +5,7 @@ const Footer = () => {
     <div className={styles.background}>
       <div className={styles.control}>
         <div className={styles.left}>
-          <h2>© 2024 Fatima Bashirli. All Rights Reserved.</h2>
+          <h2>© 2024 Fatima Bashir. All Rights Reserved.</h2>
         </div>
         <div className={styles.left}>
           <h2>Sources: LinkedIn, Behance, Resume, Portfolio.1</h2>

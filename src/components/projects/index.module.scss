@@ -6,11 +6,11 @@
 
 .background {
   margin-top: 25px;
-
+  
   .control {
     display: flex;
     gap: 30px;
-
+   
     .projectTeil {
       width: 100%;
       background-color: #e8e8e8;
@@ -34,6 +34,7 @@
     }
 
     .price {
+    
       .border {
         cursor: pointer;
         background-color: #e8e8e8;
@@ -41,7 +42,7 @@
         padding: 41px 28px;
         margin-bottom: 40px;
         text-decoration: none;
-
+    
         img {
           width: 100%;
           height: 220px;
@@ -67,7 +68,7 @@
   }
 }
 
-@media(max-width:498px) {
+@media (max-width: 498px) {
   .background {
     .control {
       display: flex;

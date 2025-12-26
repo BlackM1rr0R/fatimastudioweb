@@ -32,6 +32,13 @@ import ProjectOne23 from "../../assets/images/Brown Green Terracotta Minimal Soc
 import { Link } from "react-router-dom";
 const Projects = () => {
   const data = useMemo(() => [
+      {
+      id: 9,
+      image: `${ProjectOne9}`,
+      title: "RASHADMIRZA.COM",
+      link: "https://www.behance.net/fatimabashirli",
+      country: "Web Designer",
+    },
     {
       id: 1,
       link: "https://sayt.az/",
@@ -63,7 +70,7 @@ const Projects = () => {
     {
       id: 15,
       image: `${ProjectOne15}`,
-      title: "FATIMA BASHIRLI WEBSITE",
+      title: "FATIMA BASHIR WEBSITE",
 
       country: "UX/UI Designer",
     },
@@ -186,13 +193,7 @@ const Projects = () => {
       title: "SHOPPY.AZ",
       country: "Graphic Designer and Web Designer",
     },
-    {
-      id: 9,
-      image: `${ProjectOne9}`,
-      title: "RASHADMIRZA.COM",
-      link: "https://www.behance.net/fatimabashirli",
-      country: "Web Designer",
-    },
+  
 
   ]);
   return (
