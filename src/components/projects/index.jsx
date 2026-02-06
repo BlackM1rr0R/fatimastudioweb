@@ -53,6 +53,7 @@ import ProjectOne20 from "../../assets/images/White and Beige Minimalist Aesthet
 import ProjectOne21 from "../../assets/images/Group 3 1 1.png";
 import ProjectOne22 from "../../assets/images/image 747 1.png";
 import ProjectOne23 from "../../assets/images/Brown Green Terracotta Minimal Social Media Mockup Instagram Post 1.png";
+import ProjectOne24 from "../../assets/images/ekol.png";
 
 
 import { Link } from "react-router-dom";
@@ -198,7 +199,7 @@ const Projects = () => {
     image: ProjectOne23,
     title: "ASADZADE.SANAN",
     country: "Designer",
-  },
+  }, 
   {
     id: 9,
     image: ProjectOne9,
@@ -374,7 +375,12 @@ const Projects = () => {
     title: "CAFE & PATISSERIE",
     link: "https://www.behance.net/fatimabashirli",
     country: "Graphic Designer",
-  }
+  }, {
+    id: 24,
+    image: ProjectOne24,
+    title: "EKOL.AZ",
+    country: "Designer and SMM",
+  },
   
 
 
