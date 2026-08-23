@@ -104,7 +104,7 @@ const Projects = () => {
     id: 30,
     image: ProjectOne30,
     link: "https://www.behance.net/fatimabashirli",
-    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    title: "ASOİU / UFAZ",
     country: "Designer",
   },
   {
