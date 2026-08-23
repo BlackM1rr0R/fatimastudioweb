@@ -62,7 +62,6 @@ import ProjectOne29 from "../../assets/images/teze4.png";
 import ProjectOne30 from "../../assets/images/teze5.png";
 import ProjectOne31 from "../../assets/images/teze6.png";
 import ProjectOne32 from "../../assets/images/teze7.png";
-import ProjectOne33 from "../../assets/images/teze8.png";
 
 
 import { Link } from "react-router-dom";
@@ -88,25 +87,11 @@ const cardImageVariants = {
 const Projects = () => {
   const data = useMemo(() => [
   {
-    id: 25,
-    image: ProjectOne25,
-    link: "https://www.behance.net/fatimabashirli",
-    title: "PHOTO SHOOT ORGANIZATION",
-    country: "Creative Director",
-  },
-  {
     id: 26,
     image: ProjectOne26,
     link: "https://www.behance.net/fatimabashirli",
     title: "EKOL.AZ",
     country: "Designer and SMM",
-  },
-  {
-    id: 27,
-    image: ProjectOne27,
-    link: "https://www.behance.net/fatimabashirli",
-    title: "ASOİU / UFAZ",
-    country: "Designer",
   },
   {
     id: 28,
@@ -123,13 +108,6 @@ const Projects = () => {
     country: "Designer and SMM",
   },
   {
-    id: 30,
-    image: ProjectOne30,
-    link: "https://www.behance.net/fatimabashirli",
-    title: "ASOİU / UFAZ",
-    country: "Designer",
-  },
-  {
     id: 31,
     image: ProjectOne31,
     link: "https://www.behance.net/fatimabashirli",
@@ -144,13 +122,20 @@ const Projects = () => {
     country: "Designer and SMM",
   },
   {
-    id: 33,
-    image: ProjectOne33,
+    id: 27,
+    image: ProjectOne27,
     link: "https://www.behance.net/fatimabashirli",
-    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
-    country: "Designer and SMM",
+    title: "ASOİU / UFAZ",
+    country: "Designer",
   },
-    {
+  {
+    id: 30,
+    image: ProjectOne30,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "ASOİU / UFAZ",
+    country: "Designer",
+  },
+  {
     id: 1,
     image: ProjectOne1,
     title: "Ureb.com, Site.az, Sayt.az",
@@ -206,7 +191,6 @@ const Projects = () => {
     link: "https://www.figma.com/file/oSO7tXZPhMUVg0GmrTHW3b",
     country: "Web & Graphic Designer",
   },
-
   {
     id: 10,
     image: ProjectOne10,
@@ -290,7 +274,7 @@ const Projects = () => {
     image: ProjectOne23,
     title: "ASADZADE.SANAN",
     country: "Designer",
-  }, 
+  },
   {
     id: 9,
     image: ProjectOne9,
@@ -466,15 +450,20 @@ const Projects = () => {
     title: "CAFE & PATISSERIE",
     link: "https://www.behance.net/fatimabashirli",
     country: "Graphic Designer",
-  }, {
+  },
+  {
     id: 24,
     image: ProjectOne24,
     title: "EKOL.AZ",
     country: "Designer and SMM",
   },
-  
-
-
+  {
+    id: 25,
+    image: ProjectOne25,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "PHOTO SHOOT ORGANIZATION",
+    country: "Creative Director",
+  },
   ], []);
   return (
     <div className={styles.background}>
