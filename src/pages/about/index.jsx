@@ -1,7 +1,13 @@
-import React from 'react';
+import React from "react";
+import { motion } from "framer-motion";
+import { fadeUp } from "../../animations";
 
 const About = () => {
-  return <div>About</div>;
+  return (
+    <motion.div variants={fadeUp} initial="hidden" animate="show">
+      About
+    </motion.div>
+  );
 };
 
 export default About;

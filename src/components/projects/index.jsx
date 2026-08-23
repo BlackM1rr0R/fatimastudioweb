@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import styles from "./index.module.css";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -54,11 +54,102 @@ import ProjectOne21 from "../../assets/images/Group 3 1 1.png";
 import ProjectOne22 from "../../assets/images/image 747 1.png";
 import ProjectOne23 from "../../assets/images/Brown Green Terracotta Minimal Social Media Mockup Instagram Post 1.png";
 import ProjectOne24 from "../../assets/images/ekol.png";
+import ProjectOne25 from "../../assets/images/teze9.png";
+import ProjectOne26 from "../../assets/images/teze1.png";
+import ProjectOne27 from "../../assets/images/teze2.png";
+import ProjectOne28 from "../../assets/images/teze3.png";
+import ProjectOne29 from "../../assets/images/teze4.png";
+import ProjectOne30 from "../../assets/images/teze5.png";
+import ProjectOne31 from "../../assets/images/teze6.png";
+import ProjectOne32 from "../../assets/images/teze7.png";
+import ProjectOne33 from "../../assets/images/teze8.png";
 
 
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeUp, staggerContainer, viewportOnce } from "../../animations";
+
+const CARD_SPRING = { type: "spring", stiffness: 260, damping: 22 };
+
+const cardVariants = {
+  rest: { y: 0, boxShadow: "0px 0px 0px rgba(0,0,0,0)", transition: CARD_SPRING },
+  hovered: {
+    y: -12,
+    boxShadow: "0px 18px 40px rgba(0,0,0,0.14)",
+    transition: CARD_SPRING,
+  },
+};
+
+const cardImageVariants = {
+  rest: { scale: 1, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
+  hovered: { scale: 1.07, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
+};
+
 const Projects = () => {
   const data = useMemo(() => [
+  {
+    id: 25,
+    image: ProjectOne25,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "PHOTO SHOOT ORGANIZATION",
+    country: "Creative Director",
+  },
+  {
+    id: 26,
+    image: ProjectOne26,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "EKOL.AZ",
+    country: "Designer and SMM",
+  },
+  {
+    id: 27,
+    image: ProjectOne27,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "ASOİU / UFAZ",
+    country: "Designer",
+  },
+  {
+    id: 28,
+    image: ProjectOne28,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    country: "Designer",
+  },
+  {
+    id: 29,
+    image: ProjectOne29,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    country: "Designer and SMM",
+  },
+  {
+    id: 30,
+    image: ProjectOne30,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "ASOİU / UFAZ",
+    country: "Designer",
+  },
+  {
+    id: 31,
+    image: ProjectOne31,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    country: "Designer and SMM",
+  },
+  {
+    id: 32,
+    image: ProjectOne32,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    country: "Designer and SMM",
+  },
+  {
+    id: 33,
+    image: ProjectOne33,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    country: "Designer and SMM",
+  },
     {
     id: 1,
     image: ProjectOne1,
@@ -384,16 +475,30 @@ const Projects = () => {
   
 
 
-  ]);
+  ], []);
   return (
     <div className={styles.background}>
       <div className={styles.control}>
-        <div className={styles.projectTeil}>
-          <h1>Project Schedule</h1>
-          <h2>
-            My working experience and career journey <span>-></span>
-          </h2>
-        </div>
+        <motion.div
+          className={styles.projectTeil}
+          variants={staggerContainer(0.14)}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewportOnce}
+        >
+          <motion.h1 variants={fadeUp}>Project Schedule</motion.h1>
+          <motion.h2 variants={fadeUp}>
+            My working experience and career journey{" "}
+            {/* The arrow keeps nudging to hint the slider moves sideways. */}
+            <motion.span
+              style={{ display: "inline-block" }}
+              animate={{ x: [0, 8, 0] }}
+              transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
+            >
+              {"->"}
+            </motion.span>
+          </motion.h2>
+        </motion.div>
         <Swiper
           modules={[Autoplay]}
           className={styles.price}
@@ -421,13 +526,25 @@ const Projects = () => {
           {data.map((item) => (
             <SwiperSlide key={item.id}>
               <div className={styles.controlSwiper}>
-                <div className={styles.border}>
+                {/* Naming the hover state on the card lets the image zoom and
+                    the card lift together as one gesture. */}
+                <motion.div
+                  className={styles.border}
+                  initial="rest"
+                  animate="rest"
+                  whileHover="hovered"
+                  variants={cardVariants}
+                >
                   <Link target="_blank" to={item.link}>
-                    <img src={item.image} alt="" />
+                    <motion.img
+                      src={item.image}
+                      alt=""
+                      variants={cardImageVariants}
+                    />
                     <h2>{item.title}</h2>
                     <h3>{item.country}</h3>
                   </Link>
-                </div>
+                </motion.div>
               </div>
             </SwiperSlide>
           ))}
