@@ -94,6 +94,20 @@ const Projects = () => {
     country: "Designer and SMM",
   },
   {
+    id: 28,
+    image: ProjectOne28,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    country: "Designer",
+  },
+  {
+    id: 30,
+    image: ProjectOne30,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    country: "Designer",
+  },
+  {
     id: 1,
     image: ProjectOne1,
     title: "Ureb.com, Site.az, Sayt.az",
@@ -423,8 +437,15 @@ const Projects = () => {
     country: "Creative Director",
   },
   {
-    id: 28,
-    image: ProjectOne28,
+    id: 31,
+    image: ProjectOne31,
+    link: "https://www.behance.net/fatimabashirli",
+    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
+    country: "Designer and SMM",
+  },
+  {
+    id: 27,
+    image: ProjectOne27,
     link: "https://www.behance.net/fatimabashirli",
     title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
     country: "Designer",
@@ -437,32 +458,11 @@ const Projects = () => {
     country: "Designer and SMM",
   },
   {
-    id: 31,
-    image: ProjectOne31,
-    link: "https://www.behance.net/fatimabashirli",
-    title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
-    country: "Designer and SMM",
-  },
-  {
     id: 32,
     image: ProjectOne32,
     link: "https://www.behance.net/fatimabashirli",
     title: "AZƏRBAYCAN TİBB UNİVERSİTETİ",
     country: "Designer and SMM",
-  },
-  {
-    id: 27,
-    image: ProjectOne27,
-    link: "https://www.behance.net/fatimabashirli",
-    title: "ASOİU / UFAZ",
-    country: "Designer",
-  },
-  {
-    id: 30,
-    image: ProjectOne30,
-    link: "https://www.behance.net/fatimabashirli",
-    title: "ASOİU / UFAZ",
-    country: "Designer",
   },
   ], []);
   return (
